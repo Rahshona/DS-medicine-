@@ -15,6 +15,7 @@ class Road:
         self.tickness = 5 / 100
         value = self.mass_a * self.weight * self.tickness / 1000
         print(f'Our result is {value}')
+        return 'Good job!'
 
 
 
