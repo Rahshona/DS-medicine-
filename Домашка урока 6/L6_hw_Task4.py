@@ -22,7 +22,7 @@ class Car:
 
 
 class TownCar(Car):
-    def __int__(self, speed, color, name, is_police):
+    def __init__(self, speed, color, name, is_police):
         super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
@@ -33,11 +33,11 @@ class TownCar(Car):
             return f'This speed for {self.name} is normal'
 
 class SportCar(Car):
-    def __int__(self, speed, color, name, is_police):
+    def __init__(self, speed, color, name, is_police):
         super().__init__(speed, color, name, is_police)
 
 class WorkCar(Car):
-    def __int__(self, speed, color, name, is_police):
+    def __init__(self, speed, color, name, is_police):
         super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
@@ -49,7 +49,7 @@ class WorkCar(Car):
             return f'This speed for {self.name} is normal'
 
 class PoliceCar(Car):
-    def __int__(self, speed, color, name, is_police):
+    def __init__(self, speed, color, name, is_police):
         super().__init__(speed, color, name, is_police)
 
 
