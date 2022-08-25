@@ -12,7 +12,7 @@ class Car:
         return f'{self.name} is driving'
 
     def stop(self):
-        return f'{self.name} is stopping'
+        return f'and {self.name} is going to stop'
 
     def turn(self, direction):
         return 'to' + ' ' + direction
@@ -27,7 +27,6 @@ class TownCar(Car):
 
     def show_speed(self):
         print(f'with speed {self.speed}')
-        self.speed = random.randint(10,100)
         if self.speed > 60:
             return f'Speed of {self.name} is higher. Please, slow down'
         else:
@@ -54,15 +53,17 @@ class PoliceCar(Car):
         super().__init__(speed, color, name, is_police)
 
 
-town = TownCar(random.randint(10,100), 'yellow', 'Range', True)
-print(town.name, town.color, town.show_speed, town.is_police)
+town = TownCar(50, 'yellow', 'Range', True)
+print(town.name, town.color, town.speed, town.is_police)
 print(town.go(), town.turn('right'), town.stop())
+print(town.show_speed())
 sport = SportCar(120, 'blue', 'F1', True)
 print(sport.name, sport.color, sport.speed, sport.is_police)
 print(sport.go(), sport.turn('left'), sport.stop())
-work = WorkCar(random.randint(10,100), 'white', 'Damas', False)
-print(work.name, work.color, work.show_speed, work.is_police)
+work = WorkCar(45, 'white', 'Damas', False)
+print(work.name, work.color, work.speed, work.is_police)
 print(work.go(), work.turn('straight'), work.stop())
+print(work.show_speed())
 police = PoliceCar(50, 'black', 'Piu', False)
 print(police.name, police.color, police.speed, police.is_police)
 print(police.go(), police.turn('left'), police.stop())
