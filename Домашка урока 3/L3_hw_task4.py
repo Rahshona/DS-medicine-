@@ -3,7 +3,7 @@ def my_func(x, y):
        result = x ** y
        print(round(result, 3))
    else:
-       TypeError
+       TypeError or ValueError
        print('Введите в первом значении целое положительное число, во втором - целое отрицательное')
 
 my_func(x = int(input('Введите целое положительное число:')), y = int(input('Введите целое отрицательное число:')))
