@@ -19,12 +19,12 @@ class Cell:
         return Cell(abs(self.cell + other.cell))
 
     def make_order(self, count):
-        a = self.cell
-        while a > 0:
-            for b in range(1, count+1):
+        q = self.cell
+        while q > 0:
+            for i in range(1, count+1):
                 print(self.symbol, end ='')
-                a -= 1
-                if a <= 0:
+                q -= 1
+                if q <= 0:
                     break
             print('\n', end = '')
 
