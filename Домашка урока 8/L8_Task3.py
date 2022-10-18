@@ -5,7 +5,7 @@ class JustNumber(ValueError):
 my_list = []
 while True:
     try:
-        value = input('Введите число в список(Если хотите выйтиБ то напишите "stop"):')
+        value = input('Введите число в список(Если хотите выйти то напишите "stop"):')
         if value == 'stop':
             break
         if not value.isdigit():
