@@ -6,7 +6,6 @@ class ComplexNumber:
     def __add__(self, other):
         return f'Sum of x_1 and x_2 is:   x = {self.a + other.a} + {self.b + other.b} * i'
 
-
     def __mul__(self, other):
         return f'Product of x_1 and x_2 is:  x = {self.a * other.a + (self.b * other.b)} + {self.b * other.a} * i'
 
